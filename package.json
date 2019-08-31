@@ -2,7 +2,16 @@
   "name": "NodeJSLabs",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
   "repository": "git@github.com:GitLinuxDev/NodeJSLabs.git",
   "author": "GitLinuxDev <gitlinuxdev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
