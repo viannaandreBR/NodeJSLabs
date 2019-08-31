@@ -8,13 +8,6 @@ const app=express();
 // Iniciando o Data Base
 //mongoose.connect('mongodb://localhost:27017/nodeapi', { useNewUrlParser: true });
 
-mongoose.connect(
-    "mongodb://localhost:27017/nodeapi",
-     {useNewUrlParser: true}
-     );
-
-//mongoose.connect('mongodb://localhost:27017/nodeapi', {useNewUrlParser: true});
-
 //mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true});
 //var MyModel = mongoose.model('Test', new Schema({ name: String }));
 

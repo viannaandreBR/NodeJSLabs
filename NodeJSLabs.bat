@@ -1,1 +1,1 @@
-"C:\Program Files\Git\bin\bash"
+C:\tools\Cmder\Cmder.exe
