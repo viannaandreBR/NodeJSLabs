@@ -34,5 +34,7 @@ Re-Iniciar o Docker
 docker ps -a
 docker start mongodb
 
+npm install mongoose --save
+https://mongoosejs.com/
 
 -----------------------------------------------------------------------------------------
