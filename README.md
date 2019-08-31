@@ -37,4 +37,14 @@ docker start mongodb
 npm install mongoose --save
 https://mongoosejs.com/
 
+
+Saber IP Address MongoDB
+
+sudo docker inspect e901f3e1812a | grep "IPAddress"
+
 -----------------------------------------------------------------------------------------
+Biblioteca NodeJS  Require-dir
+
+trabalha com multiplos models, simultaneamente
+
+npm install require-dir --save
