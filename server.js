@@ -12,7 +12,7 @@ const app=express();
 
 
 mongoose.connect(
-    "mongodb+srv://NodeJSLabs:NodeJSLabs@cluster0-fal35.mongodb.net/nodeapi?retryWrites=true&w=majority",
+    "mongodb+srv://NodeJSLabs:NodeJSLabs@cluster0-fal35.mongodb.net/DBLabs?retryWrites=true&w=majority",
      {useNewUrlParser: true}
      );
 
@@ -28,11 +28,11 @@ requireDir('./src/models');
 
 const Product = mongoose.model('Product');
 
-const TabelaProd = mongoose.model('Product');
+//const TabelaProd = mongoose.model('Product');
 
-// Criando a Primeira Rota
-new TabelaProd ({
-    title: 'ReactJS',
+// Criando a Primeira Rota - ok
+new Product({
+    title: 'Visual Basic 6',
     description: 'Build Front End Apps with ReactJS',
     url: 'http://github.com/facebook/reactJS'
   }).save().then(()=> {
@@ -40,9 +40,6 @@ new TabelaProd ({
   }).catch((err)=>{
     console.log("Erro no cadastro do produto" +err);
   });
-
-
-
 
 
 
