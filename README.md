@@ -55,3 +55,16 @@ Project: NodeJS Labs
 
 mongodb+srv://NodeJSLabs:<password>@cluster0-fal35.mongodb.net/test?retryWrites=true&w=majority
 
+--------------------------------------------------------------------------------------------
+Armazenando Produto no MongoDB
+
+new Product({
+    title: 'Visual Basic 6',
+    description: 'Build Front End Apps with ReactJS',
+    url: 'http://github.com/facebook/reactJS'
+  }).save().then(()=> {
+    console.log("Produto cadastrado com Sucesso")
+  }).catch((err)=>{
+    console.log("Erro no cadastro do produto" +err);
+  });
+
