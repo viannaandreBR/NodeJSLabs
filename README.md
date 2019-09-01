@@ -48,3 +48,10 @@ Biblioteca NodeJS  Require-dir
 trabalha com multiplos models, simultaneamente
 
 npm install require-dir --save
+
+-----------------------------------------------------------------------------------------
+Configuração MongoDB Atlas
+Project: NodeJS Labs
+
+mongodb+srv://NodeJSLabs:<password>@cluster0-fal35.mongodb.net/test?retryWrites=true&w=majority
+
