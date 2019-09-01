@@ -1,18 +1,18 @@
 const  express = require('express');
 const mongoose = require("mongoose");
 const requireDir = require('require-dir');
-
+//mongodb+srv://NodeJSLabs:<password>@cluster0-fal35.mongodb.net/test?retryWrites=true&w=majority
 // Iniciando o App
 const app=express();
-mongoose.connect(
-    'mongodb://127.0.0.1:27017/nodeapi' , { useNewUrlParser: true });
+//mongoose.connect(
+ //   'mongodb://127.0.0.1:27017/nodeapi' , { useNewUrlParser: true });
 
 // Iniciando o Data Base
 //mongoose.connect('mongodb://localhost:27017/nodeapi', { useNewUrlParser: true });
 
 
 mongoose.connect(
-    "mongodb://localhost:27017/nodeapi",
+    "mongodb+srv://NodeJSLabs:NodeJSLabs@cluster0-fal35.mongodb.net/nodeapi?retryWrites=true&w=majority",
      {useNewUrlParser: true}
      );
 
@@ -32,9 +32,9 @@ const TabelaProd = mongoose.model('Product');
 
 // Criando a Primeira Rota
 new TabelaProd ({
-    title: 'React Native',
-    description: 'Build native apps with React',
-    url: 'http://github.com/facebook/react-native'
+    title: 'ReactJS',
+    description: 'Build Front End Apps with ReactJS',
+    url: 'http://github.com/facebook/reactJS'
   }).save().then(()=> {
     console.log("Produto cadastrado com Sucesso")
   }).catch((err)=>{
