@@ -4,15 +4,20 @@ const routes = express.Router();
 
 const ProductController = require('./controllers/ProductController');
 
-// Listagem
+// Rota Listagem
 routes.get("/products", ProductController.index);
 
-// Show
+// Rota Show
 routes.get("/products/:id",ProductController.show);
 
-// Criar Postagem
+// Rota Criar Postagem
 routes.post('/products', ProductController.store);
 
+// Rota Update
+routes.put('/products/:id', ProductController.update);
 
+
+// Rota Delete
+routes.delete('/products/:id', ProductController.destroy);
 
 module.exports = routes;
