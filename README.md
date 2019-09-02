@@ -81,3 +81,10 @@ Manage Environment:
 http://localhost:3001/api/products
 
 /CRUD/Insomnia_2019-09-01.json
+
+---------------------------------------------------------------------------------------------------
+Módulo Mongoose para paginação de visualização
+
+npm install --save mongoose-paginate
+
+{{ base_url  }}/products?page=3
