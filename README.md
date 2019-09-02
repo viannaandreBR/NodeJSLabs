@@ -56,7 +56,7 @@ Project: NodeJS Labs
 mongodb+srv://NodeJSLabs:<password>@cluster0-fal35.mongodb.net/test?retryWrites=true&w=majority
 
 --------------------------------------------------------------------------------------------
-Armazenando Produto no MongoDB
+Armazenando Produto no Mongo DB
 
 new Product({
     title: 'Visual Basic 6',
@@ -68,3 +68,14 @@ new Product({
     console.log("Erro no cadastro do produto" +err);
   });
 
+------------------------------------------------------------------------------------------------------
+Insomnia
+
+Manage Environment:
+{
+  "base_url": "http://localhost:3001/api"
+}
+
+
+1) Get
+http://localhost:3001/api/products

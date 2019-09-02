@@ -4,6 +4,7 @@ const requireDir = require('require-dir');
 //mongodb+srv://NodeJSLabs:<password>@cluster0-fal35.mongodb.net/test?retryWrites=true&w=majority
 // Iniciando o App
 const app=express();
+app.use(express.json());
 
 mongoose.connect(
     "mongodb+srv://NodeJSLabs:NodeJSLabs@cluster0-fal35.mongodb.net/DBLabs?retryWrites=true&w=majority",
