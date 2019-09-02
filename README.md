@@ -88,3 +88,8 @@ Módulo Mongoose para paginação de visualização
 npm install --save mongoose-paginate
 
 {{ base_url  }}/products?page=3
+
+-----------------------------------------------------------------------------------------------------
+CORS - Cross-Origin Resource Sharing
+
+npm install cors --save
