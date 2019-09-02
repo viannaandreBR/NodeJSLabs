@@ -55,3 +55,41 @@ Project: NodeJS Labs
 
 mongodb+srv://NodeJSLabs:<password>@cluster0-fal35.mongodb.net/test?retryWrites=true&w=majority
 
+--------------------------------------------------------------------------------------------
+Armazenando Produto no Mongo DB
+
+new Product({
+    title: 'Visual Basic 6',
+    description: 'Build Front End Apps with ReactJS',
+    url: 'http://github.com/facebook/reactJS'
+  }).save().then(()=> {
+    console.log("Produto cadastrado com Sucesso")
+  }).catch((err)=>{
+    console.log("Erro no cadastro do produto" +err);
+  });
+
+------------------------------------------------------------------------------------------------------
+Insomnia
+
+Manage Environment:
+{
+  "base_url": "http://localhost:3001/api"
+}
+
+
+1) Get
+http://localhost:3001/api/products
+
+/CRUD/Insomnia_2019-09-01.json
+
+---------------------------------------------------------------------------------------------------
+Módulo Mongoose para paginação de visualização
+
+npm install --save mongoose-paginate
+
+{{ base_url  }}/products?page=3
+
+-----------------------------------------------------------------------------------------------------
+CORS - Cross-Origin Resource Sharing
+
+npm install cors --save
