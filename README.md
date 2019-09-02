@@ -79,3 +79,5 @@ Manage Environment:
 
 1) Get
 http://localhost:3001/api/products
+
+/CRUD/Insomnia_2019-09-01.json
